@@ -33,9 +33,6 @@ const Login = () => {
 
         // Enviar Solicitud a la API
         await clienteURL.post('/', datos)
-            console.log('hola')
-            console.log(import.meta.env.VITE_BACKEND_URL)
-            console.log(import.meta.env.VITE_BACKEND_URL + '/')
             .then(response => {
                 setAuth(response.data.usuarioObj)
                 setAlerta({
