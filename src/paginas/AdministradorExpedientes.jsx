@@ -55,14 +55,14 @@ const AdministradorExpedientes = () => {
                   value={1}
                   onClick={() => setView('expedientes')}
                 >
-                  <img src='../public/icons/expedientes.png' alt='expedientes' className='w-12 p-2 m-auto'/>
+                  <img src='/icons/expedientes.png' alt='expedientes' className='w-12 p-2 m-auto'/>
                 </button>
                 <button 
                 className={`${view === 'registrar' && 'bg-sky-200' } w-full rounded-md hover:bg-sky-300`}
                   value={2}
                   onClick={() => setView('registrar')}
                 >
-                  <img src='../public/icons/registrar.png' alt='registrar' className='w-12 p-2 m-auto'/>
+                  <img src='/icons/registrar.png' alt='registrar' className='w-12 p-2 m-auto'/>
                 </button>
 
                 <button 
@@ -71,13 +71,13 @@ const AdministradorExpedientes = () => {
                   disabled={expedientePv === undefined && true}
                   onClick={() => setView('expedientePv')}
                 >
-                  <img src='../public/icons/user.png' alt='user' className='w-12 p-2 m-auto'/>
+                  <img src='/icons/user.png' alt='user' className='w-12 p-2 m-auto'/>
                 </button>
                 <button 
                   className={`${view === 'edit' && 'bg-blue-300' } w-full rounded-md`}
                   disabled={true}
                 >
-                  <img src='../public/icons/edit.png' alt='edit' className='w-12 p-2 m-auto'/>
+                  <img src='/icons/edit.png' alt='edit' className='w-12 p-2 m-auto'/>
                 </button>
               </div>
             </nav>

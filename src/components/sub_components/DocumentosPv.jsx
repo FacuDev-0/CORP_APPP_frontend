@@ -20,7 +20,7 @@ const DocumentosPv = ({documents, fnOpenFolder, fnOpenFile}) => {
             <div key={documento.id} id={documento.id} data-type={documento.mimetype} className='animate-fade-left w-full flex justify-around'
             >
 
-                <img src={`../public/icons/directory.png`} className='w-8'/>
+                <img src={`/icons/directory.png`} className='w-8'/>
 
                 <button
                 className='w-2/3 h-fit text-emerald-800 font-semibold bg-green-100 rounded-full p-1 px-2 hover:bg-blue-400 hover:text-white whitespace-nowrap overflow-hidden'
@@ -36,7 +36,7 @@ const DocumentosPv = ({documents, fnOpenFolder, fnOpenFile}) => {
             <div key={documento.id} id={documento.id} data-type={documento.mimetype}  className='animate-fade-left w-full flex justify-around'
             >
 
-                <img src={`../public/icons/${typeFile(documento.name)}`} className='w-8'/>
+                <img src={`/icons/${typeFile(documento.name)}`} className='w-8'/>
 
                 <button
                 className='w-2/3 h-fit text-emerald-800 font-semibold bg-green-100 rounded-full p-1 px-2 hover:bg-blue-400 hover:text-white whitespace-nowrap overflow-hidden'

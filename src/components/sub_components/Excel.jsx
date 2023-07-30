@@ -199,7 +199,7 @@ const Excel = ({documents, cargarDocumentos, notification}) => {
             <button id='save-table' className='items-center cursor-pointer hover:bg-emerald-200 p-1 rounded-full '
             onClick={handleSaveTable} 
             >
-                <img src='../public/icons/saveFile.png' className='w-8'/>
+                <img src='/icons/saveFile.png' className='w-8'/>
             </button>
               
           </div>
@@ -212,7 +212,7 @@ const Excel = ({documents, cargarDocumentos, notification}) => {
 
             <button className='items-center flex gap-1 hover:bg-emerald-200 p-1 rounded-full'
             > 
-              <img src='../public/icons/mas.png' className='w-8'/>
+              <img src='/icons/mas.png' className='w-8'/>
             </button>
           </form>
           

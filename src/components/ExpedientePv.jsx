@@ -167,10 +167,10 @@ const ExpedientePv = ({expedientePv}) => {
           <button className='w-12 h-12 bg-green-200 rounded-full hover:bg-green-400'
           onClick={handleModalEdit}
           >
-            <img src="../public/icons/escribir (2).png"  className='m-auto w-8'/>
+            <img src="/icons/escribir (2).png"  className='m-auto w-8'/>
           </button>
 
-          <img src='../public/icons/persona.png' alt='user' className='w-44 bg-emerald-200 rounded-full' />
+          <img src='/icons/persona.png' alt='user' className='w-44 bg-emerald-200 rounded-full' />
           <div className='text-xl mt-10 grid gap-2'>
             <h1 className='text-2xl font-semibold'>
               <span>{`${expediente.name} ${expediente.second_name} ${expediente.last_name} ${expediente.second_last_name}`}</span>
@@ -202,7 +202,7 @@ const ExpedientePv = ({expedientePv}) => {
               />
               
               <button className='flex items-center cursor-pointer hover:bg-emerald-200 p-1 rounded-full '>
-                <img src='../public/icons/saveFile.png' className='w-8'/>
+                <img src='/icons/saveFile.png' className='w-8'/>
               </button>
             </form>
 
@@ -212,12 +212,12 @@ const ExpedientePv = ({expedientePv}) => {
                 <button className='w-12 h-full hover:bg-green-100 transition-colors'
                 onClick={() => handlePreviousFolder()}
                 >
-                  <img src='./public/icons/flechaLeft.png' className='w-10 p-2 m-auto'/>
+                  <img src='/icons/flechaLeft.png' className='w-10 p-2 m-auto'/>
                 </button>
                 <button className='mx-2 w-12 p-1 rounded-full transition-colors hover:bg-green-300'
                 onClick={handleNewFolder}
                 >
-                <img src='./public/icons/newFolder.png' className='w-full'/>
+                <img src='/icons/newFolder.png' className='w-full'/>
                 </button>
               </nav>
 
@@ -225,7 +225,7 @@ const ExpedientePv = ({expedientePv}) => {
                 <div id='newFolder'
                 className='hidden animate-fade-right animate-duration-300 w-full justify-around'
                 >
-                  <img src={`../public/icons/directory.png`} className='w-8'/>
+                  <img src={`/icons/directory.png`} className='w-8'/>
                   <form id='save-newFolder' className='relative w-2/3'
                   onSubmit={handleNewFolder}
                   >
