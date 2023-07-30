@@ -92,7 +92,7 @@ const Expedientes = ({expedientePv}) => {
           <div 
           className="w-1/6 md:p-1"
           >
-            <img src="./public/icons/lupa.png" className="m-auto w-2/4"/>
+            <img src="../../public/icons/lupa.png" className="m-auto w-2/4"/>
           </div>
         </div>
       </nav>
