@@ -28,7 +28,7 @@ const Expedientes = ({expedientePv}) => {
             onClick={expedientePv} // handleInfoPv
           >
 
-            <img src="../public/icons/folder.png" className="w-full "/>
+            <img src="/icons/folder.png" className="w-full "/>
 
             <p className="w-full text-center whitespace-nowrap overflow-hidden">
               {`${expediente.name.charAt(0)}.${expediente.last_name}`}
@@ -92,7 +92,7 @@ const Expedientes = ({expedientePv}) => {
           <div 
           className="w-1/6 md:p-1"
           >
-            <img src="../../public/icons/lupa.png" className="m-auto w-2/4"/>
+            <img src="/icons/lupa.png" className="m-auto w-2/4"/>
           </div>
         </div>
       </nav>
