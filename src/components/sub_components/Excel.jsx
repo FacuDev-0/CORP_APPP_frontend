@@ -57,7 +57,7 @@ const Excel = ({documents, cargarDocumentos, notification}) => {
     })
 
     const infoObj = {
-      newTable,
+      newTable: JSON.stringify(newTable),
       name,
       saveInFolder: documents[0].folderId
     }
@@ -73,9 +73,8 @@ const Excel = ({documents, cargarDocumentos, notification}) => {
   const handleSaveTable = async () =>{
     const objInfo = {
       id: table.id,
-      table: table.data
+      table: JSON.stringify(table.data)
     }
-
     await saveTable(objInfo)
       .then(response => notification({msg: response.msg}))
       .catch(error => notification({msg: error.response.data.msg, error:true}))

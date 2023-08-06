@@ -23,7 +23,6 @@ const ExpedientePv = ({expedientePv}) => {
   const mostrarDocumentos = async () => {
     // Solicita los documentos del directorio en uso actual
     const folderId = documentos ? documentos[documentos.length -1].folderId : expediente.id
-
     await consultarDocumentosPv(folderId)
       .then(response => {
           if(documentos){
@@ -31,6 +30,7 @@ const ExpedientePv = ({expedientePv}) => {
             historial.pop()
             setDocumentos([...historial, response])
           }else{
+            console.log(response)
             setDocumentos([response])
           }
         }
@@ -197,8 +197,7 @@ const ExpedientePv = ({expedientePv}) => {
               file:rounded-full file:border-0
               file:text-sm file:font-semibold
               file:bg-emerald-50 file:text-emerald-500
-              hover:file:bg-emerald-100
-              '
+              hover:file:bg-emerald-100'
               />
               
               <button className='flex items-center cursor-pointer hover:bg-emerald-200 p-1 rounded-full '>
@@ -258,7 +257,7 @@ const ExpedientePv = ({expedientePv}) => {
             
         </article>
         
-        <article id='tables' className='w-full my-20 max-h-screen p-5 md:col-span-2'>
+        <article id='tablas' className='w-full my-20 max-h-screen p-5 md:col-span-2'>
 
           <Excel
            documents={documentos}
@@ -277,6 +276,7 @@ const ExpedientePv = ({expedientePv}) => {
               />
           </article> 
         }
+        
       </div>
     </>
   )
