@@ -176,7 +176,6 @@ const ExpedientePv = ({expedientePv}) => {
               <span>{`${expediente.name} ${expediente.second_name} ${expediente.last_name} ${expediente.second_last_name}`}</span>
             </h1>
             <p>Fecha De Nacimiento:<span className=''> {expediente.birthday}</span></p>
-            <p>Edad: <span>{}</span></p>
             <p>Documento: <span>{expediente.document}</span></p>
             <p>Telefono: <span>{expediente.phone}</span></p>
             <p>Local: <span>{expediente.local}</span></p>

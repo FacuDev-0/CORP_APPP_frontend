@@ -73,12 +73,6 @@ const AdministradorExpedientes = () => {
                 >
                   <img src='/icons/user.png' alt='user' className='w-12 p-2 m-auto'/>
                 </button>
-                <button 
-                  className={`${view === 'edit' && 'bg-blue-300' } w-full rounded-md`}
-                  disabled={true}
-                >
-                  <img src='/icons/edit.png' alt='edit' className='w-12 p-2 m-auto'/>
-                </button>
               </div>
             </nav>
           </section>
