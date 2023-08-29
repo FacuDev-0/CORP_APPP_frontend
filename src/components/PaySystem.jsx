@@ -3,8 +3,6 @@ import useAuth from '../hooks/useAuth';
 import { initMercadoPago, Wallet } from '@mercadopago/sdk-react';
 import { MercadoPagoInstance } from '@mercadopago/sdk-react/mercadoPago/initMercadoPago';
 initMercadoPago(import.meta.env.VITE_PUBLIC_KEY_MP);
-
-
 const PaySystem = () => {
     const {comprar} = useAuth()
 
