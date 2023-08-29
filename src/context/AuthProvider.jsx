@@ -133,7 +133,6 @@ const AuthProvider = ({children}) =>{
     }
 
     const comprar = async (preference) => {
-        console.log(preference)
         const config = {
             headers: {
                 Authorization: `Bearer ${auth.token}`,

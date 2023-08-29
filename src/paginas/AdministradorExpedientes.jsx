@@ -4,7 +4,7 @@ import useAuth from "../hooks/useAuth"
 import Expedientes from "../components/Expedientes"
 import RegistrarExpediente from "../components/RegistrarExpediente"
 import ExpedientePv from "../components/ExpedientePv"
-import PaySystem from "../components/paySystem"
+import PaySystem from "../components/PaySystem"
 
 const AdministradorExpedientes = () => {
   const {consultarExpedientePv} = useAuth()
