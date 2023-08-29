@@ -45,8 +45,8 @@ const OlvidePassword = () => {
             </form>
 
             <div className="flex flex-row justify-between mt-5">
-                <Link to='/registrar' className="text-ms hover:text-indigo-500">No te has reguistrado? Reguistrate Aqui</Link>
-                <Link to='/' className="text-ms hover:text-indigo-500">Iniciar Sesion</Link>
+                <Link to='/registrar' className="text-ms hover:text-indigo-500">No te has reguistrado? Reguistrate Aqui </Link>
+                <Link to='/' className="text-ms hover:text-indigo-500"> Iniciar Sesion </Link>
             </div>
 
         </div>

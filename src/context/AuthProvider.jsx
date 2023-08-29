@@ -132,6 +132,18 @@ const AuthProvider = ({children}) =>{
         return data
     }
 
+    const comprar = async (preference) => {
+        console.log(preference)
+        const config = {
+            headers: {
+                Authorization: `Bearer ${auth.token}`,
+                'Content-Type': 'application/json'
+            }
+        }   
+        const {data} = await clienteURL.post(`admin/create-order`,preference, config)
+        return data
+    }
+
     return(
         <AuthContext.Provider
         value={{
@@ -147,7 +159,8 @@ const AuthProvider = ({children}) =>{
             createNewTable,
             saveTable,
             queryTable,
-            opendFile
+            opendFile,
+            comprar
         }}
         >
         {children}

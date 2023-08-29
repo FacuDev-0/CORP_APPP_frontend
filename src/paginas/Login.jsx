@@ -19,7 +19,6 @@ const Login = () => {
         }
     }, [auth])
 
-
     const handleSubmit = async e =>{
         e.preventDefault()
         // Validar que los campos no esten vacios
@@ -44,7 +43,6 @@ const Login = () => {
                 error:true
             }))
     }
-
   return (
     <>
         <div className=' h-auto w-fit m-auto rounded-xl shadow-lg hover:shadow-red-300 '>
@@ -88,7 +86,6 @@ const Login = () => {
 
         </div>
     </>
-    
   )
 }
 

@@ -4,6 +4,7 @@ import useAuth from "../hooks/useAuth"
 import Expedientes from "../components/Expedientes"
 import RegistrarExpediente from "../components/RegistrarExpediente"
 import ExpedientePv from "../components/ExpedientePv"
+import PaySystem from "../components/paySystem"
 
 const AdministradorExpedientes = () => {
   const {consultarExpedientePv} = useAuth()
@@ -73,6 +74,13 @@ const AdministradorExpedientes = () => {
                 >
                   <img src='/icons/user.png' alt='user' className='w-12 p-2 m-auto'/>
                 </button>
+                <button 
+                  className={`${view === 'paySystem' && 'bg-sky-200' } w-full rounded-md hover:bg-sky-300`}
+                  value={1}
+                  onClick={() => setView('paySystem')}
+                >
+                  <img src='/icons/expedientes.png' alt='expedientes' className='w-12 p-2 m-auto'/>
+                </button>
               </div>
             </nav>
           </section>
@@ -93,8 +101,8 @@ const AdministradorExpedientes = () => {
               expedientePv={expedientePv}
             />}
 
-            {view === 'edit' && 
-            <Expedientes />
+            {view === 'paySystem' && 
+            <PaySystem />
             }
           </section>
 
